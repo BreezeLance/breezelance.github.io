@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明康 | AI 国际化人才</title>
+<style>
+  :root {
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #e0e0e0;
+    --muted: #888;
+    --accent: #6ee7b7;
+    --accent2: #a78bfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+  }
+  header { margin-bottom: 64px; }
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  .tagline {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .bio {
+    color: var(--muted);
+    margin-top: 16px;
+    font-size: 0.95rem;
+    max-width: 560px;
+  }
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .grid { display: grid; gap: 12px; }
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card h3 { font-size: 0.95rem; color: #fff; margin-bottom: 6px; }
+  .card p { font-size: 0.85rem; color: var(--muted); }
+  .badge {
+    display: inline-block;
+    background: rgba(110, 231, 183, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(110, 231, 183, 0.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+    margin: 3px 4px;
+  }
+  .badge-alt {
+    display: inline-block;
+    background: rgba(167, 139, 250, 0.1);
+    color: var(--accent2);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+    margin: 3px 4px;
+  }
+  .badge-wrap { display: flex; flex-wrap: wrap; gap: 2px; }
+  .project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 12px;
+  }
+  .project-card h3 { color: #fff; margin-bottom: 8px; }
+  .project-card .desc { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+  .links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .links a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  @media (max-width: 600px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    body { padding: 40px 16px 80px; }
+    h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>明康</h1>
+  <div class="tagline">英语 × AI · 国际化应用型人才</div>
+  <div class="bio">
+    INTJ-A · 深圳技术大学英语专业大二在读。避开硬核技术赛道，专注 AI 应用层与国际化方向。
+    擅长用英语理解全球 AI 生态，用 AI 工具链将想法落地为产品。
+  </div>
+</header>
+
+<section>
+  <h2>核心能力</h2>
+  <div class="badge-wrap">
+    <span class="badge">英语读写（高考138）</span>
+    <span class="badge">AI 提示工程</span>
+    <span class="badge">多模型工作流</span>
+    <span class="badge">结构化写作</span>
+    <span class="badge">AI 工具测评</span>
+    <span class="badge">中英双语内容</span>
+    <span class="badge-alt">Claude Code</span>
+    <span class="badge-alt">ChatGPT</span>
+    <span class="badge-alt">DeepSeek</span>
+    <span class="badge-alt">Cursor</span>
+    <span class="badge-alt">NotebookLM</span>
+    <span class="badge-alt">Obsidian</span>
+  </div>
+</section>
+
+<section>
+  <h2>项目作品</h2>
+
+  <div class="project-card">
+    <h3>AI 提示词结构化知识库</h3>
+    <div class="desc">
+      整理 50+ 条面向翻译、写作、产品分析等场景的结构化中英提示词模板。
+      使用 Claude + DeepSeek 迭代优化，开源在 GitHub。
+    </div>
+    <div class="badge-wrap">
+      <span class="badge">Prompt Engineering</span>
+      <span class="badge">开源</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>海外 AI 产品深度调研</h3>
+    <div class="desc">
+      拆解 15+ 款海外 AI 产品（Notion AI、Jasper、Perplexity 等）的功能架构、
+      商业模式与提示词策略，输出双语分析报告。
+    </div>
+    <div class="badge-wrap">
+      <span class="badge">产品分析</span>
+      <span class="badge">中英双语</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>多模型翻译质量对比评测</h3>
+    <div class="desc">
+      搭建多模型翻译对比流程，量化评估 Claude / GPT / DeepSeek 在中英翻译场景的表现。
+    </div>
+    <div class="badge-wrap">
+      <span class="badge">AI 评测</span>
+      <span class="badge">翻译</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>正在学习</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>英语实战化</h3>
+      <p>英语口语突破、AI 领域英文语境、Shadowing 训练、海外 AI 内容日常输入</p>
+    </div>
+    <div class="card">
+      <h3>AI 工作流</h3>
+      <p>多模型协作、API 基础、Agent 概念、Cursor 轻量开发、自动化工作流搭建</p>
+    </div>
+    <div class="card">
+      <h3>内容输出</h3>
+      <p>AI 工具教程、海外 AI 资讯、Prompt 分享、英语生 AI 成长记录</p>
+    </div>
+    <div class="card">
+      <h3>产品感知</h3>
+      <p>AI 产品拆解、用户体验分析、出海产品商业模式、国际化运营方法论</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>求职方向</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>AI 产品运营</h3>
+      <p>最匹配方向，需英语 + AI 理解 + 用户视角</p>
+    </div>
+    <div class="card">
+      <h3>AI 出海运营</h3>
+      <p>英语优势 + AI 工具链，巨大红利期</p>
+    </div>
+    <div class="card">
+      <h3>AI 内容 / IP</h3>
+      <p>上限极高，适合作为副线持续输出</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>联系</h2>
+  <div class="links">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    <a href="#" onclick="return false;">邮箱 · 待补充</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 明康 · 深圳 · 英语+AI 持续构建中
+</footer>
+
+</body>
+</html>
